@@ -77,7 +77,7 @@ function Car(name, place) {
 }
 
 Car.prototype = Object.create(Vehicle.prototype);
-Car.prototype.constructor = Vehicle;
+Car.prototype.constructor = Car;
 
 Car.prototype.drive = function() {
     return `${this.name} едет по ${this.place}`
